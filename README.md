@@ -7,4 +7,4 @@ We will be exploring the Speed Dating dataset provided on Kaggle. The dataset co
 https://www.kaggle.com/datasets/whenamancodes/speed-dating
 
 ## Data Exploration
-The columns we are focusing on are: percieved interest, sharedinterestso, sharedinterestpartner, interestscorrelate, attractive, sincere, intelligence, funny, and ambition. Of these columns, the ones relating to assessing oneself are skewed low as a result of people overvaluing themselves so we will standardize them and normalize the rest as they are approximately normal.
+The columns we are focusing on are: percieved interest, sharedinterestso, sharedinterestpartner, interestscorrelate, attractive, sincere, intelligence, funny, and ambition. Of these columns, the ones relating to assessing oneself are skewed low as a result of people overvaluing themselves we will normalize features and drop columns to evaluate our hypotheses.
