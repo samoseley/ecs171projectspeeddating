@@ -120,7 +120,7 @@ Ashton Coates:
     Uploading the data, assisting with data exploration, building and evaluating the KNN model, making results reproducible.
 
 Thomas Guelker: 
-    Contribution.
+    Worked on abstract, made edits to model 1 code, wrote code and writeups for model 2.
 
 Shobha Khanna: 
     Worked on the abstract, created the correlation matricies for data exploration and coded the logistic regression model for evaluating the personal perception hypothesis. Wrote the analysis and conclusion of model 1 and helped facilitate and direct communication within the group.
