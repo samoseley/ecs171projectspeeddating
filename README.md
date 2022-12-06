@@ -16,6 +16,10 @@ We will be exploring the [Speed Dating dataset](https://www.kaggle.com/datasets/
 ### **Data Exploration**
 The columns we are focusing on are: percieved interest, sharedinterestso, sharedinterestpartner, interestscorrelate, attractive, sincere, intelligence, funny, and ambition. Of these columns, the ones relating to assessing oneself are skewed low as a result of people overvaluing themselves we will normalize features and drop columns to evaluate our hypotheses.
 
+We displayed a correlation heatmap on our chosen columns: https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=AuGS2nfzbDHy&line=1&uniqifier=1
+
+Most notably, there appears to be a positive correlation between a person's ranking of their own qualities.
+
 ### **Model 1: Evaluating Personal Perception**
 #### **_Hypothesis_**
 We hypothesize that a person's perception of themselves along with their expectations of a partner play a key role in creating a match in speed dating.
@@ -24,6 +28,7 @@ Features relating to personal perception like personal ratings of one's own attr
 #### **_Logistic Regression Model_**
 The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated. 
 
+Logistic Model and MSE: https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=NU895PVUbYLq&line=13&uniqifier=1
 %% TODO :: Add some code blocks?
 ``` print("hello world!") ```
 
@@ -53,8 +58,6 @@ The data is split train:test in 75:25 and then run through a logistic regression
 ### **Model 1: Evaluating Personal Perception**
 The classification report shows the model's accuracy to be around 83%-85% which is quite good. The mean-square-error results shows no signs of overfitting or underfitting. We achieved a precision of 0.57 and recall 0.33, indicating that the model was less successful with identifying the true matches.
 
-%% TODO :: Add figures and little more about results [NO exploration]
-
 Classification report: https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=p4SHA0Gqi5dA&line=1&uniqifier=1
 |        |  precision  |   recall    |  f1-score   |   support   |
 | ------ | ----------- | ----------- | ----------- | ----------- |
@@ -74,9 +77,8 @@ Classification report: https://colab.research.google.com/drive/1u627U9eaXVYpmNcx
 
 ## **Discussion**
 ### **Model 1: Evaluating Personal Perception**
-A logistical regression model was chosen because we are evaluating how personal perception features influence the occurance of a match which is a yes/no binary variable. MSE was calculated to evaluate testing and training error which showed no evidence for overfitting or underfitting. The classification report was produced to evaluate the accuracy of the model, and the model coefficients were produced to evaluate the importance of specific personal perception features in determining match. As stated in results, the model's accuracy hovered around 83%-85%. As for specific features, A person's decision (the 'dec' feature) regarding a match was the strongest indicator of match which is not surprising. However, how much the person rated themselves in terms of fun and how they guessed how much the partner liked them also contributed significantly to the match value. When not considering 'dec' the importance of the other features can be more readily analyzed. Personal perception of fun and how much the person thought the partner liked them still contributed significantly to match value. Additionally, how much the person liked the partner and how they percieved their own attractiveness become more important. It should be noted that there is more data for a no-match compared to a yes-match and the no-match had a greater accuracy. An interesting next step after this evaluation would be to see if different genders, ages or races are more or less impacted by their personal perception based on the value of "match".
+A logistical regression model was chosen because we are evaluating how personal perception features influence the occurance of a match which is a yes/no binary variable. MSE was calculated to evaluate testing and training error which showed no evidence for overfitting or underfitting. The classification report was produced to evaluate the accuracy of the model, and the model coefficients were produced to evaluate the importance of specific personal perception features in determining match. As stated in results, the model's accuracy hovered around 83%-85%. As for specific features, A person's decision (the 'dec' feature) regarding a match was the strongest indicator of match which is not surprising. However, how much the person rated themselves in terms of fun and how they guessed how much the partner liked them also contributed significantly to the match value. When not considering 'dec' the importance of the other features can be more readily analyzed. Personal perception of fun and how much the person thought the partner liked them still contributed significantly to match value. Additionally, how much the person liked the partner and how they percieved their own attractiveness become more important. It should be noted that there is more data for a no-match compared to a yes-match and the no-match had a greater accuracy. The imbalance in the dataset may also explain the recall score of 33%, which indicates that the model had rather poor perfomance with correctly predicting yes-matches. An interesting next step after this evaluation would be to see if different genders, ages or races are more or less impacted by their personal perception based on the value of "match".
 
-%% Stuff to add: Talk about the good and bad of the model. 
 
 
 ### **Model 2: __________**
