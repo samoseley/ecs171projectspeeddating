@@ -29,7 +29,8 @@ We hypothesize that a person's perception of themselves along with their expecta
 Features relating to personal perception like personal ratings of one's own attractiveness, sincerity, intelligence, fun, ambition and shared interest and personal ratings of expectations of a partner are kept for evaluation of our hypothesis. Some demographic information like age, race and gender are also kept. Then observations containing null or empty data values are dropped from the dataset, which is not a huge issue because our dataset is very big. Lastly the data is normalized in preperation of running the logistic regression model.
 #### **_Logistic Regression Model_**
 The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated.
-
+#### **_Artificial Neural Net Model_**
+An artificial neural net (ANN) was run for comparision with the accuracy results of our logistic regression model. The ANN used two layers with a relu and then sigmoid activation function and it was run for eleven epochs.
 
 
 
