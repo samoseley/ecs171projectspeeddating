@@ -32,8 +32,16 @@ The data is split train:test in 75:25 and then run through a logistic regression
 %% TODO :: Add some code blocks?
 ``` print("hello world!") ```
 
+### **Model 2: Exploring Shared Interests**
+#### **_Hypothesis_**
+We hypothesize that percieved shared interests and overlap in reported interests will both have a significant positive impact on a person's decision
+#### **_Preprocessing_**
+We kep features related to shared interests such as percieved shared interest, reported interest correlation, and shared interest importance as well as decision and gender. We dropped any rows that had an invalid value in any of those columns and normalized the data.
+#### **_Model_**
+The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated. 
 
-### **Model 2: [model_name]**
+
+### **Model 3: [model_name]**
 #### **_Hypothesis_**
 %% TODO :: Write the hypothesis associated with this model
 #### **_Preprocessing_**
@@ -43,13 +51,6 @@ The data is split train:test in 75:25 and then run through a logistic regression
 ``` print("hello world!") ```
 
 
-### **Model 2: Exploring Shared Interests**
-#### **_Hypothesis_**
-We hypothesize that percieved shared interests and overlap in reported interests will both have a significant positive impact on a person's decision
-#### **_Preprocessing_**
-We kep features related to shared interests such as percieved shared interest, reported interest correlation, and shared interest importance as well as decision and gender. We dropped any rows that had an invalid value in any of those columns and normalized the data.
-#### **_Model_**
-The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated. 
 
 
 
