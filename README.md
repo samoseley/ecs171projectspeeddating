@@ -16,7 +16,7 @@ We will be exploring the [Speed Dating dataset](https://www.kaggle.com/datasets/
 ### **Data Exploration**
 The columns we are focusing on are: percieved interest, sharedinterestso, sharedinterestpartner, interestscorrelate, attractive, sincere, intelligence, funny, and ambition. Of these columns, the ones relating to assessing oneself are skewed low as a result of people overvaluing themselves we will normalize features and drop columns to evaluate our hypotheses.
 
-We displayed a correlation heatmap on our chosen columns: https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=AuGS2nfzbDHy&line=1&uniqifier=1
+We displayed a [correlation heatmap](https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=AuGS2nfzbDHy&line=1&uniqifier=1) on our chosen columns: 
 
 Most notably, there appears to be a positive correlation between a person's ranking of their own qualities.
 
@@ -28,7 +28,7 @@ Features relating to personal perception like personal ratings of one's own attr
 #### **_Logistic Regression Model_**
 The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated. 
 
-Logistic Model and MSE: https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=NU895PVUbYLq&line=13&uniqifier=1
+[Logistic Model and MSE]( https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=NU895PVUbYLq&line=13&uniqifier=1)
 %% TODO :: Add some code blocks?
 ``` print("hello world!") ```
 
@@ -68,7 +68,7 @@ Classification report: https://colab.research.google.com/drive/1u627U9eaXVYpmNcx
 ### **Model 2: Exploring Shared Interests**
 The classification report shows the model's accuracy to be around 69% which is passable given the small number of columns we are analyzing. The mean-square-error results shows no signs of overfitting or underfitting. Our precisions and recall were comparable to the accuracy for both responses which means our model does not heavily favor one response over the other.
 
-Classification report: https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=p4SHA0Gqi5dA&line=1&uniqifier=1
+[Classification report](https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=p4SHA0Gqi5dA&line=1&uniqifier=1)
               precision    recall  f1-score   support
 
          0.0       0.71      0.75      0.73       895
