@@ -56,15 +56,12 @@ The classification report shows the model's accuracy to be around 83%-85% which 
 %% TODO :: Add figures and little more about results [NO exploration]
 
 Classification report: https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=p4SHA0Gqi5dA&line=1&uniqifier=1
->Testing Precision & Recall
->              precision    recall  f1-score   support
->
->        0.0       0.88      0.95      0.91      1214
->        1.0       0.57      0.33      0.42       240
->
->   accuracy                           0.85      1454
->  macro avg       0.72      0.64      0.67      1454
->weighted avg       0.83      0.85      0.83      1454
+|        |  precision  |   recall    |  f1-score   |   support   |
+| ------ | ----------- | ----------- | ----------- | ----------- |
+| 0.0    |     0.88    |     0.95    |    0.91     |   1214      |
+| 1.0    |     0.57    |     0.33    |    0.42     |    240      |
+|accuracy|             |             |    0.85     |   1454      |
+
 
 ### **Model 2: [model_name]**
 %% TODO :: Your final model and final results summary (Figures, results, data) [NO exploration]
