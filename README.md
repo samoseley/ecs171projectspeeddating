@@ -58,14 +58,13 @@ The data is split train:test in 75:25 and then run through a logistic regression
 
 ## **Results**
 ### **Model 1: Evaluating Personal Perception**
-The classification report shows the model's accuracy to be around 83%-85% which is quite good. The mean-square-error results shows no signs of overfitting or underfitting. We achieved a precision of 0.57 and recall 0.33, indicating that the model was less successful with identifying the true matches.
+The classification report shows the model's accuracy to be around 83%-85% which is quite good. The mean-square-error results shows no signs of overfitting or underfitting. We achieved a precision of 0.53 and recall 0.27, indicating that the model was less successful with identifying the true matches. Our ANN had a similar accuracy, but it had better recall at 0.50 and similar precision at 0.48 for identifiying true matches.
 
-[Classification report](https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=p4SHA0Gqi5dA&line=1&uniqifier=1)
 |        |  precision  |   recall    |  f1-score   |   support   |
 | ------ | ----------- | ----------- | ----------- | ----------- |
-| 0.0    |     0.88    |     0.95    |    0.91     |   1214      |
-| 1.0    |     0.57    |     0.33    |    0.42     |    240      |
-|accuracy|             |             |    0.85     |   1454      |
+| 0.0    |     0.87    |     0.95    |    0.91     |   1213      |
+| 1.0    |     0.53    |     0.27    |    0.36     |    241      |
+|accuracy|             |             |    0.84     |   1454      |
 
 
 ### **Model 2: Exploring Shared Interests**
