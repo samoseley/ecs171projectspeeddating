@@ -90,7 +90,7 @@ A logistical regression model was chosen because we are evaluating how personal 
 
 
 ### **Model 2: __________**
-%% TODO :: Discuss why you did what you did. Your thought process from beginning to end. Explore the results and what they infer. Discuss everything good about the model. Dicuss what is wrong with the model. What would you fix if you were to do it again.
+A logistical regression model was chosen because we are evaluating how personal perception features influence the occurance of a match which is a yes/no binary variable. MSE was calculated to evaluate testing and training error which showed no evidence for overfitting or underfitting. The classification report was produced to evaluate the accuracy of the model, and the model coefficients were produced to evaluate the importance of specific personal perception features in determining match. The model resulted in 69% accuracy, with similar accuracy results when comparing just men and just women's responses. Percieved shared interests was the most significant variable in predicting a match in this model. The precision and recall scores were close to the overall accuracy of the model, indicating that the ability of the model to predict true yes-matches was not skewed. 
 
 
 ### **Model 3: __________**
@@ -123,7 +123,7 @@ Thomas Guelker:
     Contribution.
 
 Shobha Khanna: 
-    Worked on the abstract, created the correlation matricies for data exploration and coded the logistic regression model for evaluating the personal perception hypothesis. Wrote the analysis and conclusion of model 1 and helped facilitate and direct communication within the group.
+    Contribution.
 
 Sydney Moseley: 
     Contribution.
