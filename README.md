@@ -33,9 +33,9 @@ Logistic Model and MSE: https://colab.research.google.com/drive/1u627U9eaXVYpmNc
 ``` print("hello world!") ```
 
 
-### **Model 2: [model_name]**
+### **Model 2: Exploring Shared Interests**
 #### **_Hypothesis_**
-%% TODO :: Write the hypothesis associated with this model
+We hypothesize that having shared interests with a partner have a significant impact on creating a match in speed dating. 
 #### **_Preprocessing_**
 %% TODO :: What preprocessing did we do for this model
 #### **_Model_**
