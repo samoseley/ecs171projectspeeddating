@@ -36,11 +36,11 @@ An artificial neural net (ANN) was run for comparision with the accuracy results
 
 ### **Model 2: Exploring Shared Interests**
 #### **_Notebook_**
-https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=DOfdnp8RD94t&uniqifier=1
+[https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=DOfdnp8RD94t&uniqifier=1](https://colab.research.google.com/drive/1uPjPb_UVmOe4U9IjOXxzJ1T5Y1xSZmcT)
 #### **_Hypothesis_**
 We hypothesize that percieved shared interests and overlap in reported interests will both have a significant positive impact on a person's decision
 #### **_Preprocessing_**
-We kep features related to shared interests such as percieved shared interest, reported interest correlation, and shared interest importance as well as decision and gender. We dropped any rows that had an invalid value in any of those columns and normalized the data.
+We kep features related to shared interests such as percieved shared interest, reported interest correlation, and shared interest importance as well as decision and gender. We dropped any rows that had an invalid value in any of those columns and normalized the data. We created a [correlation map](https://colab.research.google.com/drive/1uPjPb_UVmOe4U9IjOXxzJ1T5Y1xSZmcT#scrollTo=AuGS2nfzbDHy&line=2&uniqifier=1) of the remaining variables.
 #### **_Model_**
 The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated. 
 
@@ -72,7 +72,7 @@ The classification report shows the model's accuracy to be around 83%-85% which 
 ### **Model 2: Exploring Shared Interests**
 The classification report shows the model's accuracy to be around 69% which is passable given the small number of columns we are analyzing. The mean-square-error results shows no signs of overfitting or underfitting. Our precisions and recall were comparable to the accuracy for both responses which means our model does not heavily favor one response over the other.
 
-[Classification report](https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=p4SHA0Gqi5dA&line=1&uniqifier=1)
+[Classification report](https://colab.research.google.com/drive/1uPjPb_UVmOe4U9IjOXxzJ1T5Y1xSZmcT#scrollTo=p4SHA0Gqi5dA&line=3&uniqifier=1)
 |        |  precision  |   recall    |  f1-score   |   support   |
 | ------ | ----------- | ----------- | ----------- | ----------- |
 | 0.0    |     0.71    |     0.75    |    0.73     |    895      |
@@ -131,7 +131,7 @@ Sydney Moseley:
     Contribution.
 
 Rishika Roy: 
-    Worked on abstract, assisting construction of hypotheses, assisting data exploration, writing parts of results and discussion for model 1 and 2
+    Worked on abstract, assisting construction of hypotheses, assisting data exploration, writing parts of methods, results, and discussion for model 1 and 2
 
 Garrett Sandzimier: 
     Contribution.
