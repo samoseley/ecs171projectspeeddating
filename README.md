@@ -124,7 +124,7 @@ Thomas Guelker:
     Contribution.
 
 Shobha Khanna: 
-    Contribution.
+    Worked on the abstract, created the correlation matricies for data exploration and coded the logistic regression model for evaluating the personal perception hypothesis. Wrote the analysis and conclusion of model 1 and helped facilitate and direct communication within the group.
 
 Sydney Moseley: 
     Contribution.
