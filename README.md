@@ -35,6 +35,8 @@ An artificial neural net (ANN) was run for comparision with the accuracy results
 
 
 ### **Model 2: Exploring Shared Interests**
+#### **_Notebook_**
+https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=DOfdnp8RD94t&uniqifier=1
 #### **_Hypothesis_**
 We hypothesize that percieved shared interests and overlap in reported interests will both have a significant positive impact on a person's decision
 #### **_Preprocessing_**
