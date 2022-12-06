@@ -95,7 +95,7 @@ A logistical regression model was chosen because we are evaluating how personal 
 
 
 ## **Collaboration**
-%% TODO :: Write a collaboration statement saying did everyone collaborate well. Was there a leader? a Coder? a writer?
+As a whole, the team worked well together. We communicated entirely through discord, both call and direct message. The work was split relatively evenly; however, some team members took more responsability than others. There were three coders who each worked on one model by themselves, but everybody would provide feedback and peer-review when needed. Everybody for the most part took part in writing, some more than others; However, everybody looked over each other's work to ensure correctness and readability. Below is a list of individual names and their contributions to the project:
 
 Example contributions:
     Coding, writing, providing feedback, setting up meetings/github/discord, submissions, helping other members, managing who works on what, etc.  
@@ -117,4 +117,4 @@ Rishika Roy:
     Contribution.
 
 Garrett Sandzimier: 
-    Contribution.
+    I wrote a portion of the abstract. I provided feedback to team members regarding important attributes and what needed to get done. I created a skeleton/outline for the README.md to make it easier for my team members to simply write the needed information in each section. I wrote the Introduction and Collaborative statement for the write-up. I also took an already written paragraph for model1 (not written by me) and seperated it into the apppropriate locations in the write-up. 
