@@ -70,7 +70,7 @@ The classification report shows the model's accuracy to be around 83%-85% which 
 
 
 ### **Model 2: Exploring Shared Interests**
-The classification report shows the model's accuracy to be around 69% which is passable given the small number of columns we are analyzing. The mean-square-error results shows no signs of overfitting or underfitting. Our precisions and recall were comparable to the accuracy for both responses which means our model does not heavily favor one response over the other.
+The classification report shows the model's accuracy to be around 69% which is passable given the small number of columns we are analyzing. The mean-square-error results shows no signs of overfitting or underfitting. Our precisions and recall were comparable to the accuracy for both responses which means our model does not heavily favor one response over the other. [Coefficient analysis](https://colab.research.google.com/drive/1uPjPb_UVmOe4U9IjOXxzJ1T5Y1xSZmcT#scrollTo=zEMZpQ9Xc3v_&line=2&uniqifier=1) showed that percieved shared interests had the highest impact on the model predictions.
 
 [Classification report](https://colab.research.google.com/drive/1uPjPb_UVmOe4U9IjOXxzJ1T5Y1xSZmcT#scrollTo=p4SHA0Gqi5dA&line=3&uniqifier=1)
 |        |  precision  |   recall    |  f1-score   |   support   |
