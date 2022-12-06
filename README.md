@@ -10,15 +10,13 @@ We will be exploring the [Speed Dating dataset](https://www.kaggle.com/datasets/
 ## introduction
 Dating sites like Tinder, Bumble, EHarmony, etc. all have algorithms that are suppose to match two people as potential partners based soley on self-reported attributes. The importance of these algorithms' accuracy is at an all time high due to the fact online dating (speed dating) is the number one way adults are meeting in today's society.
 
-Our group decided to analyze one of these algorithms to determine which attributes were most important when it comes to matching two potential people together. This topic was interesting to us because speed dating is a prominent aspect of most young adult lives today, and we wanted to understand more about what makes two people a match.
-
-The importance of functional, accurate models that can analyze such algorithms cannot be overstated. By analyzing and determining important attributes in speed dating, companies such as Tinder, Bumble, EHarmony, etc. can more accurately match compatible partners together, and eliminate the excess uncompatible matches to create a more streamline process. 
+Our group thought it would be interesting to test the accuracy of these algorithms. We accomplished this by first asking ourselves what do we think makes two people a match? We came up with three topics: shared interests/hobbies, how you percieve yourself, and how a potential partner percieves you. Thus, all we had to do was create three different models to test if each of these three topics had a high influence on the algorithm's matching process.
 
 
 
 ## Methods
 ### **Data Exploration**
-The columns we are focusing on are: percieved interest, sharedinterestso, sharedinterestpartner, interestscorrelate, attractive, sincere, intelligence, funny, and ambition. Of these columns, the ones relating to assessing oneself are skewed low as a result of people overvaluing themselves. We will normalize features and drop columns to evaluate our hypotheses.
+The columns we are focusing on are: percieved interest, sharedinterestso, sharedinterestpartner, interestscorrelate, attractive, sincere, intelligence, funny, and ambition. Of these columns, the ones relating to assessing oneself are skewed low as a result of people overvaluing themselves we will normalize features and drop columns to evaluate our hypotheses.
 
 We displayed a [correlation heatmap](https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=AuGS2nfzbDHy&line=1&uniqifier=1) on our chosen columns: 
 
@@ -49,14 +47,13 @@ We kep features related to shared interests such as percieved shared interest, r
 The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated. 
 
 
-### **Model 3: [model_name]**
+### **Model 3: Exploring Gender Differences**
 #### **_Hypothesis_**
-%% TODO :: Write the hypothesis associated with this model
+We hypothesize that there will be significant differences in the features that are different between men and women.
 #### **_Preprocessing_**
-%% TODO :: What preprocessing did we do for this model
+We split the dataframe in half, one with only male data and one with only female data. We also scaled the features so that their coefficients would be on the same scale, and compared more easily. The dependent variable for this analysis was dec (one's decision on whether to match or not) rather than match, since we were only interested in what the subject thought of their partner, not vice versa.
 #### **_Model_**
-%% TODO :: The basic process of creating the model with important code blocks (Nothing about why, results, or conclusion)
-``` print("hello world!") ```
+Both male and female data were fit to logistic regression models, with the coefficients of these models then being graphed on a scatter plot for comparison.
 
 
 
@@ -85,8 +82,8 @@ The classification report shows the model's accuracy to be around 69% which is p
 |accuracy|             |             |    0.69     |   1606      |
 
 
-### **Model 3: [model_name]**
-%% TODO :: Your final model and final results summary (Figures, results, data) [NO exploration]
+### **Model 3: Exploring difference in preference by gender**
+The coefficients of this model indicate that attractiveness is more important to males compared to features like sincerity, fun, and intelligence than it was for women. However, the differences were not as drastic as we hypothesized. Error is high enough to indicate that further testing is required to make any real claims about these features.
 
 
 
@@ -100,8 +97,8 @@ A logistical regression model was chosen because we are evaluating how personal 
 We chose to use a logistical regression model as our response variable was decision which is a boolean variable. We used decision over match in this case as we this would allow us to look at whether a given person is more likely to respond yes given whether they percieve their interests as matching their partners without having to account for their partners response. Our model achieved around 69% accuracy with percieved interests matching being weighted far above the other variables. Interestingly we saw very little correlation between percieved interests matching and how closely their reported interests matched their partners as well as very little correlation between similarity of reported interests and decision. This is likely due to how the data was generated as each person was asked to rate their interest in a number of activities and those numbers were compared which is a very inaccurate way to gauge how similar two peoples interests are. The precision and recall scores were close to the overall accuracy of the model, indicating that the ability of the model to predict the participant's decision was not siproportionate. We also split the data up by gender to see if either gender was more swayed by similar interests than the other. We observed very similar coefficients in the two models but slightly higher accuracy for women than men. However that does not necessarily mean the women participants were more swayed by similar interests, as the improvement was reflected in the precision and recall of 'no' responses. This could also mean that the model simply performed better if women were more likely to decide 'no', and so the model was able to improve simply by returning 'no' more often. As such, we can not say whether the genders care more or less about similar interests. A possible next step for further investigation could be to compare the importance of shared interests in predicting a match decision across different hobbies/activities that participants are involved in.
 
 
-### **Model 3: __________**
-%% TODO :: Discuss why you did what you did. Your thought process from beginning to end. Explore the results and what they infer. Discuss everything good about the model. Dicuss what is wrong with the model. What would you fix if you were to do it again.
+### **Model 3: Exploring differences in preference by gender**
+We chose to use logistic regression for this task as well because the dependent variable was boolean. The dependent variable, like in model 2, was one's decision on whether or not to match so that we could gauge one person's interest independent of whether the other said yes. The male model scored 75% accuracy, while the female model scored 78%. Our hypothesis that there would be differences was true, however not as significant as we thought. We found that physical attraction played a more significant role in a male's decision compared to factors like intelligence or sincerity than it did for females. Further training data would likely be required to draw a more definitive correlation between this relationship. As one might expect, because there were more "no" decisions that "yes", the mode's recall on no was better than yes. However, it was close enough to conclude that it wasn't guessing "no" a disproportionate amount of the time. It would be interesting to see more objective data, as one's rating of their own opinions can be skewed. More objective data would allow for more concrete comparisons between males and females. Also, more relationships could be observed if we had data on who was partnered up, rather than just isolated data on what someone thought of a partner that we know nothing about.
 
 
 ### **Comparing Models**
@@ -120,7 +117,7 @@ We chose to use a logistical regression model as our response variable was decis
 As a whole, the team worked well together. We communicated entirely through discord, both call and direct message. The work was split relatively evenly; however, some team members took more responsability than others. There were three coders who each worked on one model by themselves, but everybody would provide feedback and peer-review when needed. Everybody for the most part took part in writing, some more than others; However, everybody looked over each other's work to ensure correctness and readability. Below is a list of individual names and their contributions to the project:
 
 Ashton Coates:
-    Uploading the data, assisting with data exploration, building and evaluating the KNN model, making results reproducible.
+    Uploading the data, assisting with data exploration, built and analyzed the models for the question of whether there were differeces in preference by gender, and made sure all results were reproducible.
 
 Thomas Guelker: 
     Worked on abstract, made edits to model 1 code, wrote code and writeups for model 2.
