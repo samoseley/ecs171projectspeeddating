@@ -18,7 +18,7 @@ The importance of functional, accurate models that can analyze such algorithms c
 
 ## Methods
 ### **Data Exploration**
-The columns we are focusing on are: percieved interest, sharedinterestso, sharedinterestpartner, interestscorrelate, attractive, sincere, intelligence, funny, and ambition. Of these columns, the ones relating to assessing oneself are skewed low as a result of people overvaluing themselves we will normalize features and drop columns to evaluate our hypotheses.
+The columns we are focusing on are: percieved interest, sharedinterestso, sharedinterestpartner, interestscorrelate, attractive, sincere, intelligence, funny, and ambition. Of these columns, the ones relating to assessing oneself are skewed low as a result of people overvaluing themselves. We will normalize features and drop columns to evaluate our hypotheses.
 
 We displayed a [correlation heatmap](https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=AuGS2nfzbDHy&line=1&uniqifier=1) on our chosen columns: 
 
