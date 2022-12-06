@@ -36,7 +36,7 @@ An artificial neural net (ANN) was run for comparision with the accuracy results
 
 ### **Model 2: Exploring Shared Interests**
 #### **_Notebook_**
-[https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=DOfdnp8RD94t&uniqifier=1](https://colab.research.google.com/drive/1uPjPb_UVmOe4U9IjOXxzJ1T5Y1xSZmcT)
+https://colab.research.google.com/drive/1uPjPb_UVmOe4U9IjOXxzJ1T5Y1xSZmcT
 #### **_Hypothesis_**
 We hypothesize that percieved shared interests and overlap in reported interests will both have a significant positive impact on a person's decision
 #### **_Preprocessing_**
@@ -62,6 +62,7 @@ The data is split train:test in 75:25 and then run through a logistic regression
 ### **Model 1: Evaluating Personal Perception**
 The classification report shows the model's accuracy to be around 83%-85% which is quite good. The mean-square-error results shows no signs of overfitting or underfitting. We achieved a precision of 0.53 and recall 0.27, indicating that the model was less successful with identifying the true matches. Our ANN had a similar accuracy, but it had better recall at 0.50 and similar precision at 0.48 for identifiying true matches.
 
+[Classification Report](https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=p4SHA0Gqi5dA&line=2&uniqifier=1)
 |        |  precision  |   recall    |  f1-score   |   support   |
 | ------ | ----------- | ----------- | ----------- | ----------- |
 | 0.0    |     0.87    |     0.95    |    0.91     |   1213      |
