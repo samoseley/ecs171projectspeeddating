@@ -21,16 +21,17 @@ We displayed a [correlation heatmap](https://colab.research.google.com/drive/1u6
 Most notably, there appears to be a positive correlation between a person's ranking of their own qualities.
 
 ### **Model 1: Evaluating Personal Perception**
+#### **_Notebook_**
+https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=NU895PVUbYLq&line=13&uniqifier=1
 #### **_Hypothesis_**
 We hypothesize that a person's perception of themselves along with their expectations of a partner play a key role in creating a match in speed dating.
 #### **_Preprocessings_**
 Features relating to personal perception like personal ratings of one's own attractiveness, sincerity, intelligence, fun, ambition and shared interest and personal ratings of expectations of a partner are kept for evaluation of our hypothesis. Some demographic information like age, race and gender are also kept. Then observations containing null or empty data values are dropped from the dataset, which is not a huge issue because our dataset is very big. Lastly the data is normalized in preperation of running the logistic regression model.
 #### **_Logistic Regression Model_**
-The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated. 
+The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated.
 
-[Logistic Model and MSE]( https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=NU895PVUbYLq&line=13&uniqifier=1)
-%% TODO :: Add some code blocks?
-``` print("hello world!") ```
+
+
 
 ### **Model 2: Exploring Shared Interests**
 #### **_Hypothesis_**
