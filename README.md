@@ -129,7 +129,7 @@ Sydney Moseley:
     Contribution.
 
 Rishika Roy: 
-    Worked on abstract, assisting construction of hypotheses, assisting data exploration, writing parts of methods and results for model 1 and 2
+    Worked on abstract, assisting construction of hypotheses, assisting data exploration, writing parts of results and discussion for model 1 and 2
 
 Garrett Sandzimier: 
     Contribution.
