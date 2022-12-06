@@ -10,7 +10,7 @@ We will be exploring the [Speed Dating dataset](https://www.kaggle.com/datasets/
 ## introduction
 Dating sites like Tinder, Bumble, EHarmony, etc. all have algorithms that are suppose to match two people as potential partners based soley on self-reported attributes. The importance of these algorithms' accuracy is at an all time high due to the fact online dating (speed dating) is the number one way adults are meeting in today's society.
 
-Our group thought it would be interesting to test the accuracy of these algorithms. We accomplished this by first asking ourselves what do we think makes two people a match? We came up with three topics: shared interests/hobbies, how you percieve yourself, and how a potential partner percieves you. Thus, all we had to do was create three different models to test if each of these three topics had a high influence on the algorithm's matching process.
+Our group thought it would be interesting to test the accuracy of these algorithms. We accomplished this by first asking ourselves what do we think makes two people a match? We came up with three topics: shared interests/hobbies, how you percieve yourself, and what men and women look for in a partner. Thus, all we had to do was create three different models to explore how each of these topics influenced matchmaking.
 
 
 
