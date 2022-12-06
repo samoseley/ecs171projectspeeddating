@@ -8,9 +8,7 @@ We will be exploring the [Speed Dating dataset](https://www.kaggle.com/datasets/
 
 
 ## introduction
-Dating sites like Tinder, Bumble, EHarmony, etc. all have algorithms that are suppose to match two people as potential partners based soley on self-reported attributes. The importance of these algorithms' accuracy is at an all time high due to the fact online dating (speed dating) is the number one way adults are meeting in today's society.
-
-Our group thought it would be interesting to test the accuracy of these algorithms. We accomplished this by first asking ourselves what do we think makes two people a match? We came up with three topics: shared interests/hobbies, how you percieve yourself, and how a potential partner percieves you. Thus, all we had to do was create three different models to test if each of these three topics had a high influence on the algorithm's matching process.
+%%TODO :: Create an intro paragraph just talking about why we chose our project? What was interesting about the topic? Why is it important to have an accurate model for this subject/data?
 
 
 
@@ -87,12 +85,12 @@ The classification report shows the model's accuracy to be around 69% which is p
 
 ## **Discussion**
 ### **Model 1: Evaluating Personal Perception**
-A logistical regression model was chosen because we are evaluating how personal perception features influence the occurance of a match which is a yes/no binary variable. MSE was calculated to evaluate testing and training error which showed no evidence for overfitting or underfitting. The classification report was produced to evaluate the accuracy of the model, and the model coefficients were produced to evaluate the importance of specific personal perception features in determining match. As stated in results, the model's accuracy hovered around 83%-85%. As for specific features, A person's decision (the 'dec' feature) regarding a match was the strongest indicator of match which is not surprising. However, how much the person rated themselves in terms of fun and how they guessed how much the partner liked them also contributed significantly to the match value. When not considering 'dec' the importance of the other features can be more readily analyzed. Personal perception of fun and how much the person thought the partner liked them still contributed significantly to match value. Additionally, how much the person liked the partner and how they percieved their own attractiveness become more important. It should be noted that there is more data for a no-match compared to a yes-match and the no-match had a greater accuracy. The imbalance in the dataset may also explain the recall score of 33%, which indicates that the model had rather poor perfomance with correctly predicting yes-matches. An interesting next step after this evaluation would be to see if different genders, ages or races are more or less impacted by their personal perception based on the value of "match".
+A logistical regression model was chosen because we are evaluating how personal perception features influence the occurance of a match which is a yes/no binary variable. MSE was calculated to evaluate testing and training error which showed no evidence for overfitting or underfitting. The classification report was produced to evaluate the accuracy of the model, and the model coefficients were produced to evaluate the importance of specific personal perception features in determining match. As stated in results, the model's accuracy hovered around 83%-85%. As for specific features, A person's decision (the 'dec' feature) regarding a match was the strongest indicator of match which is not surprising. However, how much the person rated themselves in terms of fun and how they guessed how much the partner liked them also contributed significantly to the match value. When not considering 'dec' the importance of the other features can be more readily analyzed. Personal perception of fun and how much the person thought the partner liked them still contributed significantly to match value. Additionally, how much the person liked the partner and how they percieved their own attractiveness become more important. It should be noted that there is more data for a no-match compared to a yes-match and the no-match had a greater accuracy. The imbalance in the dataset may also explain the low recall score, which indicates that the model had rather poor perfomance with correctly predicting yes-matches. Futhermore, if we want to use personal perception to predict a match it would be beneficial to explore an artifical neural net compared to a simple logistic regression because our ANN had better recall in predicting matches compared to our logistic regression.An interesting next step after this evaluation would be to see if different genders, ages or races are more or less impacted by their personal perception based on the value of "match".
 
 
 
 ### **Model 2: __________**
-A logistical regression model was chosen because we are evaluating how personal perception features influence the occurance of a match which is a yes/no binary variable. MSE was calculated to evaluate testing and training error which showed no evidence for overfitting or underfitting. The classification report was produced to evaluate the accuracy of the model, and the model coefficients were produced to evaluate the importance of specific personal perception features in determining match. The model resulted in 69% accuracy, with similar accuracy results when comparing just men and just women's responses. Percieved shared interests was the most significant variable in predicting a match in this model. The precision and recall scores were close to the overall accuracy of the model, indicating that the ability of the model to predict true yes-matches was not disproportionate. 
+%% TODO :: Discuss why you did what you did. Your thought process from beginning to end. Explore the results and what they infer. Discuss everything good about the model. Dicuss what is wrong with the model. What would you fix if you were to do it again.
 
 
 ### **Model 3: __________**
@@ -112,7 +110,7 @@ A logistical regression model was chosen because we are evaluating how personal 
 
 
 ## **Collaboration**
-As a whole, the team worked well together. We communicated entirely through discord, both call and direct message. The work was split relatively evenly; however, some team members took more responsability than others. There were three coders who each worked on one model by themselves, but everybody would provide feedback and peer-review when needed. Everybody for the most part took part in writing, some more than others; However, everybody looked over each other's work to ensure correctness and readability. Below is a list of individual names and their contributions to the project:
+%% TODO :: Write a collaboration statement saying did everyone collaborate well. Was there a leader? a Coder? a writer?
 
 Example contributions:
     Coding, writing, providing feedback, setting up meetings/github/discord, submissions, helping other members, managing who works on what, etc.  
@@ -125,7 +123,7 @@ Thomas Guelker:
     Contribution.
 
 Shobha Khanna: 
-    Contribution.
+    Worked on the abstract, created the correlation matricies for data exploration and coded the logistic regression model for evaluating the personal perception hypothesis. Wrote the analysis and conclusion of model 1 and helped facilitate and direct communication within the group.
 
 Sydney Moseley: 
     Contribution.
@@ -134,4 +132,4 @@ Rishika Roy:
     Contribution.
 
 Garrett Sandzimier: 
-    I wrote a portion of the abstract. I provided feedback to team members regarding important attributes and what needed to get done. I created a skeleton/outline for the README.md to make it easier for my team members to simply write the needed information in each section. I wrote the Introduction and Collaborative statement for the write-up. I also took an already written paragraph for model1 (not written by me) and seperated it into the apppropriate locations in the write-up. 
+    Contribution.
