@@ -100,7 +100,7 @@ Example contributions:
         Any non-participants write :: (Did not participate)
 
 Ashton Coates:
-    Contribution.
+    Uploading the data, assisting with data exploration, building and evaluating the KNN model, making results reproducible.
 
 Thomas Guelker: 
     Contribution.
