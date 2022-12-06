@@ -127,7 +127,7 @@ Shobha Khanna:
     Worked on the abstract, created the correlation matricies for data exploration and coded the logistic regression model for evaluating the personal perception hypothesis. Wrote the analysis and conclusion of model 1 and helped facilitate and direct communication within the group.
 
 Sydney Moseley: 
-    Contribution.
+    Worked on the abstract, created pairplots for data visualization, assisted in preprocessing data, and coded and evaluated the ANN model.
 
 Rishika Roy: 
     Worked on abstract, assisting construction of hypotheses, assisting data exploration, writing parts of methods, results, and discussion for model 1 and 2
