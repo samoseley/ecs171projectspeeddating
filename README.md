@@ -8,7 +8,9 @@ We will be exploring the [Speed Dating dataset](https://www.kaggle.com/datasets/
 
 
 ## introduction
-%%TODO :: Create an intro paragraph just talking about why we chose our project? What was interesting about the topic? Why is it important to have an accurate model for this subject/data?
+Dating sites like Tinder, Bumble, EHarmony, etc. all have algorithms that are suppose to match two people as potential partners based soley on self-reported attributes. The importance of these algorithms' accuracy is at an all time high due to the fact online dating (speed dating) is the number one way adults are meeting in today's society.
+
+Our group thought it would be interesting to test the accuracy of these algorithms. We accomplished this by first asking ourselves what do we think makes two people a match? We came up with three topics: shared interests/hobbies, how you percieve yourself, and how a potential partner percieves you. Thus, all we had to do was create three different models to test if each of these three topics had a high influence on the algorithm's matching process.
 
 
 
@@ -112,11 +114,7 @@ We chose to use a logistical regression model as our response variable was decis
 
 
 ## **Collaboration**
-%% TODO :: Write a collaboration statement saying did everyone collaborate well. Was there a leader? a Coder? a writer?
-
-Example contributions:
-    Coding, writing, providing feedback, setting up meetings/github/discord, submissions, helping other members, managing who works on what, etc.  
-        Any non-participants write :: (Did not participate)
+As a whole, the team worked well together. We communicated entirely through discord, both call and direct message. The work was split relatively evenly; however, some team members took more responsability than others. There were three coders who each worked on one model by themselves, but everybody would provide feedback and peer-review when needed. Everybody for the most part took part in writing, some more than others; However, everybody looked over each other's work to ensure correctness and readability. Below is a list of individual names and their contributions to the project:
 
 Ashton Coates:
     Uploading the data, assisting with data exploration, building and evaluating the KNN model, making results reproducible.
@@ -134,4 +132,4 @@ Rishika Roy:
     Worked on abstract, assisting construction of hypotheses, assisting data exploration, writing parts of results and discussion for model 1 and 2
 
 Garrett Sandzimier: 
-    Contribution.
+    I wrote a portion of the abstract. I provided feedback to team members regarding important attributes and what needed to get done. I created a skeleton/outline for the README.md to make it easier for my team members to simply write the needed information in each section. I wrote the Introduction and Collaborative statement for the write-up. I also took an already written paragraph for model1 (not written by me) and seperated it into the apppropriate locations in the write-up. 
