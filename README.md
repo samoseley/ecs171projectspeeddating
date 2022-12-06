@@ -33,16 +33,6 @@ Logistic Model and MSE: https://colab.research.google.com/drive/1u627U9eaXVYpmNc
 ``` print("hello world!") ```
 
 
-### **Model 2: Exploring Shared Interests**
-#### **_Hypothesis_**
-We hypothesize that having shared interests with a partner have a significant impact on creating a match in speed dating. 
-#### **_Preprocessing_**
-%% TODO :: What preprocessing did we do for this model
-#### **_Model_**
-%% TODO :: The basic process of creating the model with important code blocks (Nothing about why, results, or conclusion)
-``` print("hello world!") ```
-
-
 ### **Model 2: [model_name]**
 #### **_Hypothesis_**
 %% TODO :: Write the hypothesis associated with this model
@@ -51,6 +41,15 @@ We hypothesize that having shared interests with a partner have a significant im
 #### **_Model_**
 %% TODO :: The basic process of creating the model with important code blocks (Nothing about why, results, or conclusion)
 ``` print("hello world!") ```
+
+
+### **Model 2: Exploring Shared Interests**
+#### **_Hypothesis_**
+We hypothesize that percieved shared interests and overlap in reported interests will both have a significant positive impact on a person's decision
+#### **_Preprocessing_**
+We kep features related to shared interests such as percieved shared interest, reported interest correlation, and shared interest importance as well as decision and gender. We dropped any rows that had an invalid value in any of those columns and normalized the data.
+#### **_Model_**
+The data is split train:test in 75:25 and then run through a logistic regression model. A classification report and model coefficients are produced. Finally, mean-squared-error was calculated. 
 
 
 
@@ -66,11 +65,21 @@ Classification report: https://colab.research.google.com/drive/1u627U9eaXVYpmNcx
 |accuracy|             |             |    0.85     |   1454      |
 
 
-### **Model 2: [model_name]**
-%% TODO :: Your final model and final results summary (Figures, results, data) [NO exploration]
+### **Model 2: Exploring Shared Interests**
+The classification report shows the model's accuracy to be around 69% which is passable given the small number of columns we are analyzing. The mean-square-error results shows no signs of overfitting or underfitting. Our precisions and recall were comparable to the accuracy for both responses which means our model does not heavily favor one response over the other.
+
+Classification report: https://colab.research.google.com/drive/1u627U9eaXVYpmNcxioSJax0oVLrmV6P7#scrollTo=p4SHA0Gqi5dA&line=1&uniqifier=1
+              precision    recall  f1-score   support
+
+         0.0       0.71      0.75      0.73       895
+         1.0       0.66      0.61      0.64       711
+
+    accuracy                           0.69      1606
+   macro avg       0.69      0.68      0.68      1606
+weighted avg       0.69      0.69      0.69      1606
 
 
-### **Model 2: [model_name]**
+### **Model 3: [model_name]**
 %% TODO :: Your final model and final results summary (Figures, results, data) [NO exploration]
 
 
