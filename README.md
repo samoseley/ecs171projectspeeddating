@@ -6,7 +6,7 @@ We will be exploring the [Speed Dating dataset](https://www.kaggle.com/datasets/
 
 
 
-## introduction
+## Introduction
 Dating is a complex subject, as most preferences in a partner are subjective. This makes predicting a match between two people basically impossible. However, our group wants to attempt the impossible. Our interest in the subject of dating shouldn't be a suprise, as relationships are a main aspect of life itself. Our goal with our exploration into dating is to find which attributes affect a person's decision making the most, and which attributes have the highest influence in predicting a match. With the side goal of creating an accurate model to predict decision making and matching.
 
 Before you venture into our exploration, one key destinction needs to be made, and that is between decision and match. Decision is the attribute depicting one subject choosing another (Ie. Swiping right or left on Tinder). Match is the attribute depicting if two subjects matched each other. (Ie. Both subjects swiped right on Tinder). 
