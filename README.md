@@ -109,7 +109,7 @@ Although our models for the most part were inaccurate, that doesn't mean they di
 
 
 ## **Conclusion**
-%% TODO :: Concluding statements. Everything you want to say that isn't already in the other sections. 
+Our project shows that attributes such as self-confidence, common interests, and subconscious distinctions in how we perceive others dependent on gender, influence the likelihood of receiving a match when speed dating. One future direction would be to include more features in the models, such as 'expectednuminterestedinme' and 'expectednummatches' in model 1 and 'match' in model 3. Another future direction would be to work on increasing precision and recall for matches (1) in all three models. This could possibly be done by balancing the dataset to include an equal distribution of match and nonmatch data. We could also try implementing different models for binary classification to each hypothesis, such as k-Nearest Neighbors or Naive Bayes. A deeper dive into the dataset would also be beneficial, for there are still some ambiguous unused features such as 'attr1_1' and 'sinc1_1'. In addition, 'race' was previously encoded into integers, but it's unclear what race correlates to what number. If speed-dating companies considered the correlations we found between these features, they could see an increase in success rates. Although this project involves speed dating data, it may give us important insights into how we socialize and are attracted to others in varying contexts. Overall, it is incredible that we were able to quickly come to these conclusions using simple implementations of machine learning models. 
 
 
 
@@ -127,7 +127,7 @@ Shobha Khanna:
     Worked on the abstract, created the correlation matricies for data exploration and coded the logistic regression model for evaluating the personal perception hypothesis. Wrote the analysis and conclusion of model 1 and helped facilitate and direct communication within the group.
 
 Sydney Moseley: 
-    Worked on the abstract, created pairplots for data visualization, assisted in preprocessing data, and coded and evaluated the ANN model.
+    Worked on the abstract, created pairplots for data visualization, assisted in preprocessing data, coded and evaluated the ANN model, and wrote conclusion.
 
 Rishika Roy: 
     Worked on abstract, assisting construction of hypotheses, assisting data exploration, writing parts of methods, results, and discussion for model 1 and 2
